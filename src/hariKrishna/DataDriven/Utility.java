@@ -17,7 +17,8 @@ public class Utility {
 	
 	public WebDriver invokeBrowser() throws MalformedURLException {
 		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setBrowserName("chrome");
+		String browser = System.getProperty("browser") != null ? System.getProperty("browser") : "chrome";
+		caps.setBrowserName(browser);
 		caps.setPlatform(Platform.ANY);
 		driver = new RemoteWebDriver(new URL("http://192.168.0.121:4444"),caps);
 		driver.manage().window().maximize();

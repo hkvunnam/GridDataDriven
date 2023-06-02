@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="8" parallel="classes" name="Suite">
+  <test thread-count="8" parallel="classes" name="Test">
+    <classes>
+      <class name="hariKrishna.DataDriven.SqlData"/>
+      <class name="hariKrishna.DataDriven.ExcelDriven"/>
+      <class name="hariKrishna.DataDriven.DataDriven"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
