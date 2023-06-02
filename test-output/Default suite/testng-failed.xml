@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="hariKrishna.DataDriven.DataDriven">
+      <class name="hariKrishna.DataDriven.SqlData">
         <methods>
           <include name="launch"/>
-          <include name="datahashTest"/>
+          <include name="dataTest"/>
           <include name="close"/>
         </methods>
-      </class> <!-- hariKrishna.DataDriven.DataDriven -->
+      </class> <!-- hariKrishna.DataDriven.SqlData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class DataDriven extends Utility {
 
-	@Test(dataProvider = "object", enabled = false)
+	@Test(dataProvider = "object")
 	public void dataTest(String user, String pass) {
 		driver.findElement(By.id("username")).sendKeys(user);
 		driver.findElement(By.id("password")).sendKeys(pass);
